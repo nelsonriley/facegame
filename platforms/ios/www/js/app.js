@@ -22,16 +22,20 @@ angular.module('starter', ['ionic', 'starter.services'])
 
 .controller('MainCtrl', function($scope, Camera) {
 
+  // photo model: uri, createdAt
+  $scope.photos = [];
+
   $scope.getPhoto = function() {
     Camera.getPicture().then(function(imageURI) {
-      console.log(imageURI);
-      $scope.lastPhoto = imageURI;
+      console.log("Image URI ", imageURI);
+      // $scope.lastPhoto = imageURI; // single photo
+      $scope.photos.push({uri: imageURI, createdAt: 11});
     }, function(err) {
       console.err(err);
     }, {
       quality: 75,
-      targetWidth: 320,
-      targetHeight: 320,
+      targetWidth: 320, // 320
+      targetHeight: 320, // 320
       saveToPhotoAlbum: false
     });
   };

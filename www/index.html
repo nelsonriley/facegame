@@ -28,7 +28,11 @@
     </ion-header-bar>
     <ion-content padding="true">
       <button ng-click="getPhoto()" class="button button-block button-primary">Take Photo</button>
-      <img ng-src="{{lastPhoto}}" style="max-width: 100%">
+      <ion-list>
+        <ion-item ng-repeat="photo in photos">
+          <img ng-src="{{photo.uri}}" style="max-width: 100%"> -->
+        </ion-item>
+      </ion-list>
     </ion-content>
   </body>
 </html>
