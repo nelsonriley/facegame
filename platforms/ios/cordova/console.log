@@ -394,3 +394,16 @@ objc[68544]: Class AXEmojiUtilities is implemented in both /Applications/Xcode.a
 2014-07-07 12:42:06.348 CameraTest[61783:70b] Finished load of: file:///Users/nelly/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/85B84D3F-69B5-48D3-ADA7-6D37A361487C/CameraTest.app/www/index.html
 2014-07-07 12:42:09.822 CameraTest[61783:70b] ACTIVATING
 2014-07-07 12:42:11.149 CameraTest[61783:70b] ACTIVATING
+2014-07-07 14:38:42.156 FaceGame[62533:70b] Multi-tasking -> Device: YES, App: YES
+2014-07-07 14:38:42.162 FaceGame[62533:70b] Unlimited access to network resources
+2014-07-07 14:38:42.165 FaceGame[62533:70b] Fix applied for database locations?: YES
+2014-07-07 14:38:42.181 FaceGame[62533:70b] CDVPlugin class CDVStatusBar (pluginName: statusbar) does not exist.
+2014-07-07 14:38:42.182 FaceGame[62533:70b] [CDVTimer][statusbar] 0.438035ms
+2014-07-07 14:38:42.182 FaceGame[62533:70b] [CDVTimer][TotalPluginStartup] 0.824988ms
+2014-07-07 14:38:42.223 FaceGame[62533:70b] Resetting plugins due to page load.
+2014-07-07 14:38:42.342 FaceGame[62533:70b] Finished load of: file:///Users/nelly/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/B7852024-E2A3-449E-B3B9-743429DDCD70/FaceGame.app/www/index.html
+2014-07-07 14:38:47.982 FaceGame[62533:70b] Camera.getPicture: source type 1 not available.
+2014-07-07 14:38:49.493 FaceGame[62533:70b] ACTIVATING
+2014-07-07 14:38:49.529 FaceGame[62533:70b] Camera.getPicture: source type 1 not available.
+2014-07-07 14:38:50.291 FaceGame[62533:70b] ACTIVATING
+2014-07-07 14:38:50.333 FaceGame[62533:70b] Camera.getPicture: source type 1 not available.

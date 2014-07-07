@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="com.ionicframework.starter" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>CameraTest</name>
+    <name>FaceGame</name>
     <description>
-        An Ionic Framework and Cordova project.
+        A mobile game for sharing funny faces.
     </description>
-    <author email="hi@ionicframework" href="http://ionicframework.com/">
-      Ionic Framework Team
+    <author email="nelsonriley@gmail.com" href="http://www.launchproto.com/">
+      Nelson Riley
     </author>
     <content src="index.html" />
     <access origin="*" />
