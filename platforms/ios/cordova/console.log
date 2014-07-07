@@ -407,3 +407,38 @@ objc[68544]: Class AXEmojiUtilities is implemented in both /Applications/Xcode.a
 2014-07-07 14:38:49.529 FaceGame[62533:70b] Camera.getPicture: source type 1 not available.
 2014-07-07 14:38:50.291 FaceGame[62533:70b] ACTIVATING
 2014-07-07 14:38:50.333 FaceGame[62533:70b] Camera.getPicture: source type 1 not available.
+2014-07-07 15:05:27.676 FaceGame[62894:70b] Multi-tasking -> Device: YES, App: YES
+2014-07-07 15:05:27.715 FaceGame[62894:70b] Unlimited access to network resources
+2014-07-07 15:05:27.868 FaceGame[62894:70b] CDVPlugin class CDVStatusBar (pluginName: statusbar) does not exist.
+2014-07-07 15:05:27.868 FaceGame[62894:70b] [CDVTimer][statusbar] 0.476003ms
+2014-07-07 15:05:27.868 FaceGame[62894:70b] [CDVTimer][TotalPluginStartup] 0.827014ms
+2014-07-07 15:05:30.484 FaceGame[62894:70b] Resetting plugins due to page load.
+2014-07-07 15:05:30.699 FaceGame[62894:70b] Finished load of: file:///Users/nelly/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/B7852024-E2A3-449E-B3B9-743429DDCD70/FaceGame.app/www/index.html
+2014-07-07 15:06:12.469 FaceGame[63134:70b] Multi-tasking -> Device: YES, App: YES
+2014-07-07 15:06:12.476 FaceGame[63134:70b] Unlimited access to network resources
+2014-07-07 15:06:12.491 FaceGame[63134:70b] CDVPlugin class CDVStatusBar (pluginName: statusbar) does not exist.
+2014-07-07 15:06:12.491 FaceGame[63134:70b] [CDVTimer][statusbar] 0.445008ms
+2014-07-07 15:06:12.492 FaceGame[63134:70b] [CDVTimer][TotalPluginStartup] 0.774980ms
+2014-07-07 15:06:12.621 FaceGame[63134:70b] Resetting plugins due to page load.
+2014-07-07 15:06:12.745 FaceGame[63134:70b] Finished load of: file:///Users/nelly/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/B7852024-E2A3-449E-B3B9-743429DDCD70/FaceGame.app/www/index.html
+2014-07-07 15:09:18.368 FaceGame[63134:70b] Camera.getPicture: source type 1 not available.
+2014-07-07 15:09:20.385 FaceGame[63134:70b] Camera.getPicture: source type 1 not available.
+2014-07-07 15:09:20.560 FaceGame[63134:70b] Camera.getPicture: source type 1 not available.
+2014-07-07 15:09:20.785 FaceGame[63134:70b] ACTIVATING
+2014-07-07 15:09:20.843 FaceGame[63134:70b] Camera.getPicture: source type 1 not available.
+2014-07-07 15:09:21.134 FaceGame[63134:70b] ACTIVATING
+2014-07-07 15:09:21.147 FaceGame[63134:70b] Camera.getPicture: source type 1 not available.
+2014-07-07 15:12:12.987 FaceGame[63444:70b] Multi-tasking -> Device: YES, App: YES
+2014-07-07 15:12:12.994 FaceGame[63444:70b] Unlimited access to network resources
+2014-07-07 15:12:13.015 FaceGame[63444:70b] CDVPlugin class CDVStatusBar (pluginName: statusbar) does not exist.
+2014-07-07 15:12:13.016 FaceGame[63444:70b] [CDVTimer][statusbar] 0.557005ms
+2014-07-07 15:12:13.016 FaceGame[63444:70b] [CDVTimer][TotalPluginStartup] 0.990987ms
+2014-07-07 15:12:13.056 FaceGame[63444:70b] Resetting plugins due to page load.
+2014-07-07 15:12:13.288 FaceGame[63444:70b] Finished load of: file:///Users/nelly/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/B7852024-E2A3-449E-B3B9-743429DDCD70/FaceGame.app/www/index.html
+2014-07-07 15:24:05.867 FaceGame[63982:70b] Multi-tasking -> Device: YES, App: YES
+2014-07-07 15:24:05.873 FaceGame[63982:70b] Unlimited access to network resources
+2014-07-07 15:24:05.887 FaceGame[63982:70b] CDVPlugin class CDVStatusBar (pluginName: statusbar) does not exist.
+2014-07-07 15:24:05.888 FaceGame[63982:70b] [CDVTimer][statusbar] 0.487030ms
+2014-07-07 15:24:05.888 FaceGame[63982:70b] [CDVTimer][TotalPluginStartup] 0.863969ms
+2014-07-07 15:24:06.018 FaceGame[63982:70b] Resetting plugins due to page load.
+2014-07-07 15:24:06.155 FaceGame[63982:70b] Finished load of: file:///Users/nelly/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/B7852024-E2A3-449E-B3B9-743429DDCD70/FaceGame.app/www/index.html

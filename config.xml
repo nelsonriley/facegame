@@ -1,10 +1,10 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="com.ionicframework.starter" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>FaceGame</name>
+    <name>CameraTest</name>
     <description>
         A mobile game for sharing funny faces.
     </description>
-    <author email="nelsonriley@gmail.com" href="http://www.launchproto.com/">
+    <author email="hi@ionicframework" href="http://ionicframework.com/">
       Nelson Riley
     </author>
     <content src="index.html" />

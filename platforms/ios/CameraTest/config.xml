@@ -28,11 +28,11 @@
     <feature name="Camera">
         <param name="ios-package" value="CDVCamera" />
     </feature>
-    <name>FaceGame</name>
+    <name>CameraTest</name>
     <description>
         A mobile game for sharing funny faces.
     </description>
-    <author email="nelsonriley@gmail.com" href="http://www.launchproto.com/">
+    <author email="hi@ionicframework" href="http://ionicframework.com/">
       Nelson Riley
     </author>
     <content src="index.html" />
