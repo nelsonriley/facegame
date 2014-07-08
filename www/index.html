@@ -35,7 +35,7 @@
       <button ng-click="getPhoto()" class="button button-block button-primary">Take Photo</button>
 
       <ion-list>
-        <ion-item ng-repeat="msg in messages">
+        <ion-item ng-repeat="(key, msg) in messages" ng-click="removeMessage(key)">
           <em>{{msg.from}}</em>: {{msg.body}}
         </ion-item>
       </ion-list>

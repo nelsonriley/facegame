@@ -31,8 +31,16 @@ angular.module('starter', ['ionic', 'starter.services', 'firebase'])
   $scope.photos = [];
 
   $scope.addMessage = function() {
-    $scope.messages.$add({from: 'test', body: 'firebased'});
+    $scope.messages.$add({from: Math.floor(Math.random()*100), body: 'firebased'})
+    .then(function(ref) {
+      console.log(ref.name()); // key
+    });
   };
+  $scope.removeMessage = function(key) {
+    $scope.messages.$remove(key); //'-JRINR32u2LSaPF1ATXP'
+  };
+  // if using any type of sorting filter with ng-repeat, use $id as described here:
+  // http://stackoverflow.com/questions/20982617/angularjs-with-angularfire-0-5-0-remove-item-doesnt-work?rq=1
 
   $scope.getPhoto = function() {
     Camera.getPicture().then(function(imageURI) {
