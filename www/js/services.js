@@ -3,11 +3,20 @@ angular.module('services', [])
 .factory('Camera', ['$q', function($q) {
  
   return {
+    // opens photo view and returns a promise, promise returns a URI
     getPicture: function(options) {
       var q = $q.defer();
       
       if (options === undefined) {
-        options = {cameraDirection: 1}; // cameraDirection: "1" is used for front-facing camera and "2" is used for user-facing camera
+        // cameraDirection: "1" for front-facing, "2" for user-facing
+        // destinationType: Camera.DestinationType.DATA_URL
+        options = {
+          cameraDirection: 1,
+          quality: 75,
+          targetWidth: 320,
+          targetHeight: 320,
+          saveToPhotoAlbum: true
+        }; 
       }
       
       navigator.camera.getPicture(function(result) {

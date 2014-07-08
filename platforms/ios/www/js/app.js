@@ -9,6 +9,15 @@ angular.module('app', ['ionic', 'services', 'firebase', 'controllers'])
 
 .config(function($compileProvider, $stateProvider, $urlRouterProvider) {
   $compileProvider.imgSrcSanitizationWhitelist(/^\s*(https?|ftp|mailto|file|tel):/);
+  
+  $stateProvider
+
+    .state('start', {
+      url: "/start",
+      templateUrl: "templates/start.html",
+      controller: 'AppController'
+    });
+
   $stateProvider
 
     .state('app', {
@@ -39,22 +48,25 @@ angular.module('app', ['ionic', 'services', 'firebase', 'controllers'])
     });
 
   // Default route
-  $urlRouterProvider.otherwise('/app/photobooth');
+  $urlRouterProvider.otherwise('/start');
 })
 
 .run(function($ionicPlatform, Device) {
+  console.log("RUNNING APP");
   $ionicPlatform.ready(function() {
+    console.log("PLATFORM READY");
     if(window.StatusBar) {
       // org.apache.cordova.statusbar required
       StatusBar.styleDefault();
     }
+    // Grab and set all device details (ie uuid)
     Device.set(ionic.Platform.device());
   });
 })
 
-.controller('AppController', function($scope, $rootScope, $ionicModal, $timeout, $firebase, Device) {
+.controller('AppController', function($scope, $rootScope, $location, $ionicViewService, $ionicModal, $timeout, $firebase, Device) {
 
-  $rootScope.currentUser = "joe";
+  $rootScope.rootUser = "rootUser";
 
   // Check Firebase for existing users
   var FB = new Firebase("https://facegame.firebaseio.com/");
@@ -78,7 +90,7 @@ angular.module('app', ['ionic', 'services', 'firebase', 'controllers'])
   // Form data for the login modal
   $scope.loginData = {};
 
-  // // Prepare the modal
+  // Prepare the modal
   $ionicModal.fromTemplateUrl('templates/newuser.html', {
     scope: $scope
   }).then(function(modal) {
@@ -86,42 +98,56 @@ angular.module('app', ['ionic', 'services', 'firebase', 'controllers'])
   });
 
   // Hide login modal
-  $scope.closeLogin = function() {
+  $scope.closeSignup = function() {
     $scope.modal.hide();
   };
 
   // Show login modal
-  $scope.login = function() {
+  $scope.openSignup = function() {
     $scope.modal.show();
+  };
+
+  $scope.doSignup = function() {
+
+    $scope.users.$add({username: $scope.loginData.username, uuid: Device.get('uuid')})
+    .then(function(ref) {
+      console.log("New Firebase User Reference: ", ref.name()); // key
+      $scope.closeSignup();
+    });;
+
   };
 
   // Perform the login action when the user submits the login form
   $scope.doLogin = function() {
-    console.log('Doing login: ', $scope.loginData.username);
+    $rootScope.rootUser = $scope.loginData.username;
+    console.log('Doing login: ', $rootScope.rootUser);
     // save with priority ** not working **
     // $scope.users['newuser'] = {username: $scope.loginData.username, uuid: Device.get('uuid')};
     // $scope.users['newuser'].priority = Device.get('uuid');
     // $scope.users.$save('newuser').then(function(ref) {
     //   console.log("Another New Firebase User Reference: ", ref.name()); // key
     // });
-
-    $scope.users.$add({username: $scope.loginData.username, uuid: Device.get('uuid')})
-    .then(function(ref) {
-      console.log("New Firebase User Reference: ", ref.name()); // key
-    });;
-
-    // Simulate a login delay. Remove this and replace with your login
-    // code if using a login system
+    // simulate login
     $timeout(function() {
-      $scope.closeLogin();
-    }, 1000);
+      // use ionicViewService to hide the back button on next view
+      $ionicViewService.nextViewOptions({
+        disableBack: true
+      });
+      // go to photobooth after login
+      $location.path('/app/photobooth');
+    }, 20);
   };
 
 })
 
+
+///////////////////////////////////////////////////////////////////
+////////////////////////   Test Controller
+///////////////////////////////////////////////////////////////////
+
 .controller('TestController', function($scope, $rootScope, $firebase, Camera, Device) {
   // make the current user accessible
-  $scope.currentUser = $rootScope.currentUser;
+  $scope.rootUser = $rootScope.rootUser;
 
   $scope.user = {};
   // var ref = new Firebase("https://facegame.firebaseio.com/");

@@ -8,7 +8,10 @@
 
     <ion-list>
       <ion-item ng-repeat="pair in pairs">
-        <img ng-src="{{pair.photo1}}" style="max-width: 40%">
+        <ion-div style="max-width: 40%">
+          <img ng-src="{{pair.photo1}}" style="max-width: 40%">
+          label
+        </ion-div>
         <img ng-src="{{pair.photo2}}" style="max-width: 40%">
       </ion-item>
     </ion-list>

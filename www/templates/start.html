@@ -1,12 +1,13 @@
-<div class="modal">
-  <ion-header-bar>
-    <h1 class="title">Sign up</h1>
-    <div class="buttons">
-      <button class="button button-clear" ng-click="closeSignup()">Close</button>
-    </div>
-  </ion-header-bar>
-  <ion-content>
-    <form ng-submit="doSignup()">
+<ion-view title="Log in">
+  <ion-nav-bar>
+    <ion-nav-buttons side="right">
+      <button class="button button-clear" ng-click="openSignup()">Sign up</button>
+    </ion-nav-buttons>
+  </ion-nav-bar>
+
+  <ion-content class="has-header" padding="true">
+
+    <form ng-submit="doLogin()">
       <div class="list">
         <label class="item item-input">
           <span class="input-label">Your Username: </span>
@@ -17,10 +18,12 @@
           <input type="password" ng-model="loginData.password">
         </label> -->
         <label class="item">
-          <button class="button button-block button-positive" type="submit">Create Account</button>
+          <button class="button button-block button-positive" type="submit">Start Playing</button>
         </label>
       </div>
     </form>
+
   </ion-content>
-</div>
+
+</ion-view>
 

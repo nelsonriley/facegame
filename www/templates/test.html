@@ -7,7 +7,7 @@
 		<button ng-click="addMessage()" class="button button-block button-primary">Add Message</button>
     <button ng-click="getPhoto()" class="button button-block button-primary">Take Photo</button>
     <ion-div>UUID: {{user.uuid}}</ion-div>
-    <ion-div>User: {{currentUser}}</ion-div>
+    <ion-div>User: {{rootUser}}</ion-div>
 
     <ion-list>
       <ion-item ng-repeat="(key, msg) in messages" ng-click="removeMessage(key)">

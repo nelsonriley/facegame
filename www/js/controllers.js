@@ -7,31 +7,17 @@ angular.module('controllers', ['ionic', 'services', 'firebase'])
 .controller('PersonalController', function($scope, $rootScope, $firebase, Camera, Device) {
 
   $scope.pairs = [];
-
-  // move this
+ 
+  // makeIt specific to this scope
   $scope.makeIt = function() {
-    console.log('Getting camera');
     Camera.getPicture().then(function(imageURI) {
       console.log("Fresh Image: ", imageURI);
       $scope.pairs.push({photo1: imageURI});
     }, function(err) {
-      console.err(err);
-    }, {
-      quality: 75,
-      targetWidth: 320,
-      targetHeight: 320,
-      saveToPhotoAlbum: false
+      console.err("Camera Error: ", err);
     });
-    /*
-    navigator.camera.getPicture(function(imageURI) {
-      console.log(imageURI);
-    }, function(err) {
-    }, { 
-      quality: 50,
-      destinationType: Camera.DestinationType.DATA_URL
-    });
-    */
   }
+
 })
 
 
