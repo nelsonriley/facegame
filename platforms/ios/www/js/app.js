@@ -30,6 +30,10 @@ angular.module('starter', ['ionic', 'starter.services', 'firebase'])
   // photo model: uri, createdAt
   $scope.photos = [];
 
+  $scope.addMessage = function() {
+    $scope.messages.$add({from: 'test', body: 'firebased'});
+  };
+
   $scope.getPhoto = function() {
     Camera.getPicture().then(function(imageURI) {
       console.log("Image URI ", imageURI);
