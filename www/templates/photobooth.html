@@ -1,0 +1,18 @@
+<ion-view title="Photo Booth">
+  <ion-nav-buttons side="left">
+    <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+  </ion-nav-buttons>
+
+  <ion-content class="has-header" padding="true">
+		<button ng-click="makeIt()" class="button button-block button-primary">Make a Face (make it)</button>
+
+    <ion-list>
+      <ion-item ng-repeat="pair in pairs">
+        <img ng-src="{{pair.photo1}}" style="max-width: 40%">
+        <img ng-src="{{pair.photo2}}" style="max-width: 40%">
+      </ion-item>
+    </ion-list>
+
+  </ion-content>
+
+</ion-view>

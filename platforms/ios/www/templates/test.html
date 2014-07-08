@@ -1,4 +1,4 @@
-<ion-view title="Faces">
+<ion-view title="Test">
   <ion-nav-buttons side="left">
     <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
   </ion-nav-buttons>
@@ -6,7 +6,8 @@
   <ion-content class="has-header" padding="true">
 		<button ng-click="addMessage()" class="button button-block button-primary">Add Message</button>
     <button ng-click="getPhoto()" class="button button-block button-primary">Take Photo</button>
-    <ion-div>{{user.uuid}}</ion-div>
+    <ion-div>UUID: {{user.uuid}}</ion-div>
+    <ion-div>User: {{currentUser}}</ion-div>
 
     <ion-list>
       <ion-item ng-repeat="(key, msg) in messages" ng-click="removeMessage(key)">

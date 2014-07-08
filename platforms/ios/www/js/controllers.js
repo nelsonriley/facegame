@@ -1,19 +1,19 @@
-angular.module('controllers', [])
+angular.module('controllers', ['ionic', 'services', 'firebase'])
 
 .config(function($compileProvider){
   $compileProvider.imgSrcSanitizationWhitelist(/^\s*(https?|ftp|mailto|file|tel):/);
 })
 
-.controller('DashCtrl', function($scope) {
-})
+.controller('PersonalController', function($scope, $rootScope, $firebase, Camera, Device) {
 
-.controller('FriendsCtrl', function($scope, Friends, Camera) {
-  $scope.friends = Friends.all();
-  $scope.getPhoto = function() {
+  $scope.pairs = [];
+
+  // move this
+  $scope.makeIt = function() {
     console.log('Getting camera');
     Camera.getPicture().then(function(imageURI) {
-      console.log(imageURI);
-      $scope.lastPhoto = imageURI;
+      console.log("Fresh Image: ", imageURI);
+      $scope.pairs.push({photo1: imageURI});
     }, function(err) {
       console.err(err);
     }, {
@@ -34,9 +34,10 @@ angular.module('controllers', [])
   }
 })
 
+
+
+
+// stateParams????
 .controller('FriendDetailCtrl', function($scope, $stateParams, Friends) {
   $scope.friend = Friends.get($stateParams.friendId);
-})
-
-.controller('AccountCtrl', function($scope) {
 });

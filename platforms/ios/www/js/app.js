@@ -5,7 +5,7 @@
 // the 2nd parameter is an array of 'requires'
 // 'starter.services' is found in services.js
 // 'starter.controllers' is found in controllers.js
-angular.module('app', ['ionic', 'services', 'firebase'])
+angular.module('app', ['ionic', 'services', 'firebase', 'controllers'])
 
 .config(function($compileProvider, $stateProvider, $urlRouterProvider) {
   $compileProvider.imgSrcSanitizationWhitelist(/^\s*(https?|ftp|mailto|file|tel):/);
@@ -18,6 +18,16 @@ angular.module('app', ['ionic', 'services', 'firebase'])
       controller: 'AppController'
     })
 
+    .state('app.photobooth', {
+      url: "/photobooth",
+      views: {
+        'menuContent' :{
+          templateUrl: "templates/photobooth.html",
+          controller: 'PersonalController'
+        }
+      }
+    })
+
     .state('app.test', {
       url: "/test",
       views: {
@@ -27,8 +37,9 @@ angular.module('app', ['ionic', 'services', 'firebase'])
         }
       }
     });
-  // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/app/test');
+
+  // Default route
+  $urlRouterProvider.otherwise('/app/photobooth');
 })
 
 .run(function($ionicPlatform, Device) {
@@ -41,12 +52,29 @@ angular.module('app', ['ionic', 'services', 'firebase'])
   });
 })
 
-.controller('AppController', function($scope, $ionicModal, $timeout) {
+.controller('AppController', function($scope, $rootScope, $ionicModal, $timeout, $firebase, Device) {
 
-  // 
-  // var FB = new Firebase("https://facegame.firebaseio.com/");
+  $rootScope.currentUser = "joe";
+
+  // Check Firebase for existing users
+  var FB = new Firebase("https://facegame.firebaseio.com/");
+  var users = FB.child("users");
+  $scope.users = $firebase(users);
+
+  // Test for a user with a ** requires priority **
+  // var userz = new Firebase("https://facegame.firebaseio.com/users");
+  // var show = function(snap) {
+  //   var dog = {dog: "hound"};
+  //   console.log(JSON.stringify(dog));
+  //   console.log("SHOWING----------");
+  //   console.log(snap);
+  //   // $rootScope.currentUser = JSON.stringify(snap);
+  // };
+  // userz
+  //   .startAt(Device.get('uuid'))
+  //   .endAt(Device.get('uuid'))
+  //   .once('value', show);
   
-
   // Form data for the login modal
   $scope.loginData = {};
 
@@ -69,7 +97,18 @@ angular.module('app', ['ionic', 'services', 'firebase'])
 
   // Perform the login action when the user submits the login form
   $scope.doLogin = function() {
-    console.log('Doing login', $scope.loginData);
+    console.log('Doing login: ', $scope.loginData.username);
+    // save with priority ** not working **
+    // $scope.users['newuser'] = {username: $scope.loginData.username, uuid: Device.get('uuid')};
+    // $scope.users['newuser'].priority = Device.get('uuid');
+    // $scope.users.$save('newuser').then(function(ref) {
+    //   console.log("Another New Firebase User Reference: ", ref.name()); // key
+    // });
+
+    $scope.users.$add({username: $scope.loginData.username, uuid: Device.get('uuid')})
+    .then(function(ref) {
+      console.log("New Firebase User Reference: ", ref.name()); // key
+    });;
 
     // Simulate a login delay. Remove this and replace with your login
     // code if using a login system
@@ -80,7 +119,9 @@ angular.module('app', ['ionic', 'services', 'firebase'])
 
 })
 
-.controller('TestController', function($scope, $firebase, Camera, Device) {
+.controller('TestController', function($scope, $rootScope, $firebase, Camera, Device) {
+  // make the current user accessible
+  $scope.currentUser = $rootScope.currentUser;
 
   $scope.user = {};
   // var ref = new Firebase("https://facegame.firebaseio.com/");
