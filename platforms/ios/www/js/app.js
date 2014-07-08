@@ -5,7 +5,7 @@
 // the 2nd parameter is an array of 'requires'
 // 'starter.services' is found in services.js
 // 'starter.controllers' is found in controllers.js
-angular.module('app', ['ionic', 'starter.services', 'firebase'])
+angular.module('app', ['ionic', 'services', 'firebase'])
 
 .config(function($compileProvider, $stateProvider, $urlRouterProvider) {
   $compileProvider.imgSrcSanitizationWhitelist(/^\s*(https?|ftp|mailto|file|tel):/);
@@ -23,7 +23,7 @@ angular.module('app', ['ionic', 'starter.services', 'firebase'])
       views: {
         'menuContent' :{
           templateUrl: "templates/test.html",
-          controller: 'AppController'
+          controller: 'TestController'
         }
       }
     });
@@ -41,7 +41,46 @@ angular.module('app', ['ionic', 'starter.services', 'firebase'])
   });
 })
 
-.controller('AppController', function($scope, $firebase, Camera, Device) {
+.controller('AppController', function($scope, $ionicModal, $timeout) {
+
+  // 
+  // var FB = new Firebase("https://facegame.firebaseio.com/");
+  
+
+  // Form data for the login modal
+  $scope.loginData = {};
+
+  // // Prepare the modal
+  $ionicModal.fromTemplateUrl('templates/newuser.html', {
+    scope: $scope
+  }).then(function(modal) {
+    $scope.modal = modal;
+  });
+
+  // Hide login modal
+  $scope.closeLogin = function() {
+    $scope.modal.hide();
+  };
+
+  // Show login modal
+  $scope.login = function() {
+    $scope.modal.show();
+  };
+
+  // Perform the login action when the user submits the login form
+  $scope.doLogin = function() {
+    console.log('Doing login', $scope.loginData);
+
+    // Simulate a login delay. Remove this and replace with your login
+    // code if using a login system
+    $timeout(function() {
+      $scope.closeLogin();
+    }, 1000);
+  };
+
+})
+
+.controller('TestController', function($scope, $firebase, Camera, Device) {
 
   $scope.user = {};
   // var ref = new Firebase("https://facegame.firebaseio.com/");
@@ -80,4 +119,4 @@ angular.module('app', ['ionic', 'starter.services', 'firebase'])
     });
   };
 
-})
+});

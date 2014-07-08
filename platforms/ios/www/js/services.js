@@ -1,4 +1,4 @@
-angular.module('starter.services', [])
+angular.module('services', [])
 
 .factory('Camera', ['$q', function($q) {
  
