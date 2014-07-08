@@ -5,10 +5,30 @@
 // the 2nd parameter is an array of 'requires'
 // 'starter.services' is found in services.js
 // 'starter.controllers' is found in controllers.js
-angular.module('starter', ['ionic', 'starter.services', 'firebase'])
+angular.module('app', ['ionic', 'starter.services', 'firebase'])
 
-.config(function($compileProvider){
+.config(function($compileProvider, $stateProvider, $urlRouterProvider) {
   $compileProvider.imgSrcSanitizationWhitelist(/^\s*(https?|ftp|mailto|file|tel):/);
+  $stateProvider
+
+    .state('app', {
+      url: "/app",
+      abstract: true,
+      templateUrl: "templates/menu.html",
+      controller: 'AppController'
+    })
+
+    .state('app.test', {
+      url: "/test",
+      views: {
+        'menuContent' :{
+          templateUrl: "templates/test.html",
+          controller: 'AppController'
+        }
+      }
+    });
+  // if none of the above states are matched, use this as the fallback
+  $urlRouterProvider.otherwise('/app/test');
 })
 
 .run(function($ionicPlatform, Device) {
@@ -21,7 +41,7 @@ angular.module('starter', ['ionic', 'starter.services', 'firebase'])
   });
 })
 
-.controller('MainCtrl', function($scope, $firebase, Camera, Device) {
+.controller('AppController', function($scope, $firebase, Camera, Device) {
 
   $scope.user = {};
   // var ref = new Firebase("https://facegame.firebaseio.com/");

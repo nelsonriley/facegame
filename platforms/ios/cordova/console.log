@@ -870,3 +870,40 @@ objc[68544]: Class AXEmojiUtilities is implemented in both /Applications/Xcode.a
 2014-07-07 19:39:30.767 CameraTest[76252:70b] Resetting plugins due to page load.
 2014-07-07 19:39:30.905 CameraTest[76252:70b] Finished load of: file:///Users/nelly/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/F75A4CC6-1034-4C0B-994C-55A6B222E204/CameraTest.app/www/index.html
 2014-07-07 19:39:34.140 CameraTest[76252:70b] New Firebase Reference Name:  -JRIpm_t-36RIg466bxu
+2014-07-07 21:09:20.791 CameraTest[77115:70b] Multi-tasking -> Device: YES, App: YES
+2014-07-07 21:09:20.802 CameraTest[77115:70b] Unlimited access to network resources
+2014-07-07 21:09:20.806 CameraTest[77115:70b] Fix applied for database locations?: YES
+2014-07-07 21:09:20.807 CameraTest[77115:70b] Restoring old webstorage backup. From: '/Users/nelly/Library/Application Support/iPhone Simulator/7.1/Applications/55B1B944-88F3-491E-B693-812D94BC2D14/Library/Caches/file__0.localstorage' To: '/Users/nelly/Library/Application Support/iPhone Simulator/7.1/Applications/55B1B944-88F3-491E-B693-812D94BC2D14/Library/WebKit/LocalStorage/file__0.localstorage'.
+2014-07-07 21:09:20.809 CameraTest[77115:70b] Removing old webstorage backup: '/Users/nelly/Library/Application Support/iPhone Simulator/7.1/Applications/55B1B944-88F3-491E-B693-812D94BC2D14/Library/Caches/file__0.localstorage'.
+2014-07-07 21:09:20.824 CameraTest[77115:70b] CDVPlugin class CDVStatusBar (pluginName: statusbar) does not exist.
+2014-07-07 21:09:20.825 CameraTest[77115:70b] [CDVTimer][statusbar] 0.495017ms
+2014-07-07 21:09:20.825 CameraTest[77115:70b] [CDVTimer][TotalPluginStartup] 0.874996ms
+2014-07-07 21:09:20.891 CameraTest[77115:70b] Resetting plugins due to page load.
+2014-07-07 21:09:21.034 CameraTest[77115:70b] Finished load of: file:///Users/nelly/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/55B1B944-88F3-491E-B693-812D94BC2D14/CameraTest.app/www/index.html
+2014-07-07 21:11:19.243 CameraTest[77369:70b] Multi-tasking -> Device: YES, App: YES
+2014-07-07 21:11:19.249 CameraTest[77369:70b] Unlimited access to network resources
+2014-07-07 21:11:19.264 CameraTest[77369:70b] CDVPlugin class CDVStatusBar (pluginName: statusbar) does not exist.
+2014-07-07 21:11:19.264 CameraTest[77369:70b] [CDVTimer][statusbar] 0.427008ms
+2014-07-07 21:11:19.265 CameraTest[77369:70b] [CDVTimer][TotalPluginStartup] 0.770986ms
+2014-07-07 21:11:19.298 CameraTest[77369:70b] Resetting plugins due to page load.
+2014-07-07 21:11:19.449 CameraTest[77369:70b] Finished load of: file:///Users/nelly/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/55B1B944-88F3-491E-B693-812D94BC2D14/CameraTest.app/www/index.html#/app/test
+2014-07-07 21:11:24.506 CameraTest[77369:70b] ACTIVATING
+2014-07-07 21:11:28.060 CameraTest[77369:70b] ACTIVATING
+2014-07-07 21:11:30.467 CameraTest[77369:70b] ACTIVATING
+2014-07-07 21:11:32.288 CameraTest[77369:70b] ACTIVATING
+2014-07-07 21:11:33.169 CameraTest[77369:70b] ACTIVATING
+2014-07-07 21:11:34.879 CameraTest[77369:70b] ACTIVATING
+2014-07-07 21:11:37.149 CameraTest[77369:70b] ACTIVATING
+2014-07-07 21:11:38.562 CameraTest[77369:70b] ACTIVATING
+2014-07-07 21:11:40.751 CameraTest[77369:70b] ACTIVATING
+2014-07-07 21:11:40.853 CameraTest[77369:70b] New Firebase Reference Name:  -JRJ9rrEjwNQPZY78bKJ
+2014-07-07 21:11:41.938 CameraTest[77369:70b] ACTIVATING
+2014-07-07 21:11:42.051 CameraTest[77369:70b] New Firebase Reference Name:  -JRJ9s8ZhznzHV-x1l4t
+2014-07-07 21:11:43.948 CameraTest[77369:70b] ACTIVATING
+2014-07-07 21:11:44.582 CameraTest[77369:70b] ACTIVATING
+2014-07-07 21:11:45.095 CameraTest[77369:70b] ACTIVATING
+2014-07-07 21:11:46.310 CameraTest[77369:70b] New Firebase Reference Name:  -JRJ9tB_7PWOHKEinv2W
+2014-07-07 21:11:46.413 CameraTest[77369:70b] ACTIVATING
+2014-07-07 21:11:46.492 CameraTest[77369:70b] New Firebase Reference Name:  -JRJ9tEIy455sAvWq7sv
+2014-07-07 21:11:47.000 CameraTest[77369:70b] New Firebase Reference Name:  -JRJ9tMCBpNHVC7CWOgl
+2014-07-07 21:11:48.591 CameraTest[77369:70b] ACTIVATING
