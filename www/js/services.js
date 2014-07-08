@@ -18,6 +18,21 @@ angular.module('starter.services', [])
   }
 }])
 
+// service to make device information available at any time
+.factory('Device', function() {
+  var device;
+
+  return {
+    // available: model, platform, uuid, version
+    get: function(key) {
+      return device[key];
+    },
+    set: function(obj) {
+      device = obj;
+    }
+  }
+})
+
 /**
  * A simple example service that returns some data.
  */

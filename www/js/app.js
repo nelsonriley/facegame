@@ -11,17 +11,19 @@ angular.module('starter', ['ionic', 'starter.services', 'firebase'])
   $compileProvider.imgSrcSanitizationWhitelist(/^\s*(https?|ftp|mailto|file|tel):/);
 })
 
-.run(function($ionicPlatform) {
+.run(function($ionicPlatform, Device) {
   $ionicPlatform.ready(function() {
     if(window.StatusBar) {
       // org.apache.cordova.statusbar required
       StatusBar.styleDefault();
     }
+    Device.set(ionic.Platform.device());
   });
 })
 
-.controller('MainCtrl', function($scope, $firebase, Camera) {
+.controller('MainCtrl', function($scope, $firebase, Camera, Device) {
 
+  $scope.user = {};
   // var ref = new Firebase("https://facegame.firebaseio.com/");
   var ref = new Firebase("https://gdwjjyuzekg.firebaseio-demo.com/");
   $scope.messages = $firebase(ref);
@@ -31,9 +33,10 @@ angular.module('starter', ['ionic', 'starter.services', 'firebase'])
   $scope.photos = [];
 
   $scope.addMessage = function() {
+    $scope.user.uuid = Device.get('uuid');
     $scope.messages.$add({from: Math.floor(Math.random()*100), body: 'firebased'})
     .then(function(ref) {
-      console.log(ref.name()); // key
+      console.log("New Firebase Reference Name: ", ref.name()); // key
     });
   };
   $scope.removeMessage = function(key) {

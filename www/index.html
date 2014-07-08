@@ -33,7 +33,7 @@
     <ion-content padding="true">
       <button ng-click="addMessage()" class="button button-block button-primary">Add Message</button>
       <button ng-click="getPhoto()" class="button button-block button-primary">Take Photo</button>
-
+      <ion-div>{{user.uuid}}</ion-div>
       <ion-list>
         <ion-item ng-repeat="(key, msg) in messages" ng-click="removeMessage(key)">
           <em>{{msg.from}}</em>: {{msg.body}}
