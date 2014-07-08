@@ -442,3 +442,104 @@ objc[68544]: Class AXEmojiUtilities is implemented in both /Applications/Xcode.a
 2014-07-07 15:24:05.888 FaceGame[63982:70b] [CDVTimer][TotalPluginStartup] 0.863969ms
 2014-07-07 15:24:06.018 FaceGame[63982:70b] Resetting plugins due to page load.
 2014-07-07 15:24:06.155 FaceGame[63982:70b] Finished load of: file:///Users/nelly/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/B7852024-E2A3-449E-B3B9-743429DDCD70/FaceGame.app/www/index.html
+2014-07-07 16:38:46.156 CameraTest[65924:70b] Multi-tasking -> Device: YES, App: YES
+2014-07-07 16:38:46.503 CameraTest[65924:70b] Unlimited access to network resources
+2014-07-07 16:38:46.621 CameraTest[65924:70b] Fix applied for database locations?: YES
+2014-07-07 16:38:48.926 CameraTest[65924:70b] CDVPlugin class CDVStatusBar (pluginName: statusbar) does not exist.
+2014-07-07 16:38:48.926 CameraTest[65924:70b] [CDVTimer][statusbar] 0.479996ms
+2014-07-07 16:38:48.926 CameraTest[65924:70b] [CDVTimer][TotalPluginStartup] 0.865996ms
+2014-07-07 16:38:49.578 CameraTest[65924:70b] Resetting plugins due to page load.
+2014-07-07 16:38:51.107 CameraTest[65924:70b] Finished load of: file:///Users/nelly/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/F75A4CC6-1034-4C0B-994C-55A6B222E204/CameraTest.app/www/index.html
+2014-07-07 16:38:51.800 CameraTest[65924:70b] THREAD WARNING: ['Device'] took '11.951904' ms. Plugin should use a background thread.
+2014-07-07 16:39:57.869 CameraTest[65924:70b] Camera.getPicture: source type 1 not available.
+2014-07-07 16:39:58.573 CameraTest[65924:70b] Camera.getPicture: source type 1 not available.
+2014-07-07 16:39:58.975 CameraTest[65924:70b] Camera.getPicture: source type 1 not available.
+2014-07-07 16:39:59.353 CameraTest[65924:70b] Camera.getPicture: source type 1 not available.
+2014-07-07 16:44:46.148 CameraTest[66206:70b] Multi-tasking -> Device: YES, App: YES
+2014-07-07 16:44:46.154 CameraTest[66206:70b] Unlimited access to network resources
+2014-07-07 16:44:46.170 CameraTest[66206:70b] CDVPlugin class CDVStatusBar (pluginName: statusbar) does not exist.
+2014-07-07 16:44:46.171 CameraTest[66206:70b] [CDVTimer][statusbar] 0.456035ms
+2014-07-07 16:44:46.171 CameraTest[66206:70b] [CDVTimer][TotalPluginStartup] 0.844002ms
+2014-07-07 16:44:46.350 CameraTest[66206:70b] Resetting plugins due to page load.
+2014-07-07 16:44:46.504 CameraTest[66206:70b] Finished load of: file:///Users/nelly/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/F75A4CC6-1034-4C0B-994C-55A6B222E204/CameraTest.app/www/index.html
+2014-07-07 16:45:11.270 CameraTest[66206:70b] ACTIVATING
+2014-07-07 16:45:11.308 CameraTest[66206:70b] Camera.getPicture: source type 1 not available.
+2014-07-07 16:45:11.981 CameraTest[66206:70b] ACTIVATING
+2014-07-07 16:45:12.029 CameraTest[66206:70b] Camera.getPicture: source type 1 not available.
+2014-07-07 16:49:56.676 CameraTest[66464:70b] Multi-tasking -> Device: YES, App: YES
+2014-07-07 16:49:56.682 CameraTest[66464:70b] Unlimited access to network resources
+2014-07-07 16:49:56.702 CameraTest[66464:70b] CDVPlugin class CDVStatusBar (pluginName: statusbar) does not exist.
+2014-07-07 16:49:56.703 CameraTest[66464:70b] [CDVTimer][statusbar] 0.449002ms
+2014-07-07 16:49:56.703 CameraTest[66464:70b] [CDVTimer][TotalPluginStartup] 0.842988ms
+2014-07-07 16:49:56.899 CameraTest[66464:70b] Resetting plugins due to page load.
+2014-07-07 16:49:57.062 CameraTest[66464:70b] Finished load of: file:///Users/nelly/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/F75A4CC6-1034-4C0B-994C-55A6B222E204/CameraTest.app/www/index.html
+2014-07-07 16:51:22.249 CameraTest[66715:70b] Multi-tasking -> Device: YES, App: YES
+2014-07-07 16:51:22.255 CameraTest[66715:70b] Unlimited access to network resources
+2014-07-07 16:51:22.270 CameraTest[66715:70b] CDVPlugin class CDVStatusBar (pluginName: statusbar) does not exist.
+2014-07-07 16:51:22.271 CameraTest[66715:70b] [CDVTimer][statusbar] 0.433981ms
+2014-07-07 16:51:22.271 CameraTest[66715:70b] [CDVTimer][TotalPluginStartup] 0.781000ms
+2014-07-07 16:51:22.383 CameraTest[66715:70b] Resetting plugins due to page load.
+2014-07-07 16:51:22.501 CameraTest[66715:70b] Finished load of: file:///Users/nelly/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/F75A4CC6-1034-4C0B-994C-55A6B222E204/CameraTest.app/www/index.html
+2014-07-07 16:53:00.825 CameraTest[66966:70b] Multi-tasking -> Device: YES, App: YES
+2014-07-07 16:53:00.832 CameraTest[66966:70b] Unlimited access to network resources
+2014-07-07 16:53:00.847 CameraTest[66966:70b] CDVPlugin class CDVStatusBar (pluginName: statusbar) does not exist.
+2014-07-07 16:53:00.848 CameraTest[66966:70b] [CDVTimer][statusbar] 0.495970ms
+2014-07-07 16:53:00.848 CameraTest[66966:70b] [CDVTimer][TotalPluginStartup] 0.882030ms
+2014-07-07 16:53:00.925 CameraTest[66966:70b] Resetting plugins due to page load.
+2014-07-07 16:53:01.043 CameraTest[66966:70b] Finished load of: file:///Users/nelly/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/F75A4CC6-1034-4C0B-994C-55A6B222E204/CameraTest.app/www/index.html
+2014-07-07 16:53:52.273 CameraTest[67213:70b] Multi-tasking -> Device: YES, App: YES
+2014-07-07 16:53:52.279 CameraTest[67213:70b] Unlimited access to network resources
+2014-07-07 16:53:52.295 CameraTest[67213:70b] CDVPlugin class CDVStatusBar (pluginName: statusbar) does not exist.
+2014-07-07 16:53:52.295 CameraTest[67213:70b] [CDVTimer][statusbar] 0.463009ms
+2014-07-07 16:53:52.296 CameraTest[67213:70b] [CDVTimer][TotalPluginStartup] 0.826001ms
+2014-07-07 16:53:52.346 CameraTest[67213:70b] Resetting plugins due to page load.
+2014-07-07 16:53:52.445 CameraTest[67213:70b] Finished load of: file:///Users/nelly/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/F75A4CC6-1034-4C0B-994C-55A6B222E204/CameraTest.app/www/index.html
+2014-07-07 16:55:43.387 CameraTest[67464:70b] Multi-tasking -> Device: YES, App: YES
+2014-07-07 16:55:43.394 CameraTest[67464:70b] Unlimited access to network resources
+2014-07-07 16:55:43.409 CameraTest[67464:70b] CDVPlugin class CDVStatusBar (pluginName: statusbar) does not exist.
+2014-07-07 16:55:43.409 CameraTest[67464:70b] [CDVTimer][statusbar] 0.486016ms
+2014-07-07 16:55:43.410 CameraTest[67464:70b] [CDVTimer][TotalPluginStartup] 0.953019ms
+2014-07-07 16:55:43.445 CameraTest[67464:70b] Resetting plugins due to page load.
+2014-07-07 16:55:43.539 CameraTest[67464:70b] Finished load of: file:///Users/nelly/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/F75A4CC6-1034-4C0B-994C-55A6B222E204/CameraTest.app/www/index.html
+2014-07-07 16:58:53.793 CameraTest[67731:70b] Multi-tasking -> Device: YES, App: YES
+2014-07-07 16:58:53.805 CameraTest[67731:70b] Unlimited access to network resources
+2014-07-07 16:58:53.820 CameraTest[67731:70b] CDVPlugin class CDVStatusBar (pluginName: statusbar) does not exist.
+2014-07-07 16:58:53.821 CameraTest[67731:70b] [CDVTimer][statusbar] 0.454009ms
+2014-07-07 16:58:53.821 CameraTest[67731:70b] [CDVTimer][TotalPluginStartup] 0.822008ms
+2014-07-07 16:58:53.863 CameraTest[67731:70b] Resetting plugins due to page load.
+2014-07-07 16:58:53.958 CameraTest[67731:70b] Finished load of: file:///Users/nelly/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/F75A4CC6-1034-4C0B-994C-55A6B222E204/CameraTest.app/www/index.html
+2014-07-07 17:01:23.437 CameraTest[68097:70b] Multi-tasking -> Device: YES, App: YES
+2014-07-07 17:01:23.443 CameraTest[68097:70b] Unlimited access to network resources
+2014-07-07 17:01:23.459 CameraTest[68097:70b] CDVPlugin class CDVStatusBar (pluginName: statusbar) does not exist.
+2014-07-07 17:01:23.459 CameraTest[68097:70b] [CDVTimer][statusbar] 0.423968ms
+2014-07-07 17:01:23.459 CameraTest[68097:70b] [CDVTimer][TotalPluginStartup] 0.766039ms
+2014-07-07 17:01:23.563 CameraTest[68097:70b] Resetting plugins due to page load.
+2014-07-07 17:01:23.669 CameraTest[68097:70b] Finished load of: file:///Users/nelly/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/F75A4CC6-1034-4C0B-994C-55A6B222E204/CameraTest.app/www/index.html
+2014-07-07 17:02:34.518 CameraTest[68347:70b] Multi-tasking -> Device: YES, App: YES
+2014-07-07 17:02:34.524 CameraTest[68347:70b] Unlimited access to network resources
+2014-07-07 17:02:34.539 CameraTest[68347:70b] CDVPlugin class CDVStatusBar (pluginName: statusbar) does not exist.
+2014-07-07 17:02:34.539 CameraTest[68347:70b] [CDVTimer][statusbar] 0.455022ms
+2014-07-07 17:02:34.540 CameraTest[68347:70b] [CDVTimer][TotalPluginStartup] 0.804007ms
+2014-07-07 17:02:34.606 CameraTest[68347:70b] Resetting plugins due to page load.
+2014-07-07 17:02:34.716 CameraTest[68347:70b] Finished load of: file:///Users/nelly/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/F75A4CC6-1034-4C0B-994C-55A6B222E204/CameraTest.app/www/index.html
+2014-07-07 17:04:18.439 CameraTest[68601:70b] Multi-tasking -> Device: YES, App: YES
+2014-07-07 17:04:18.445 CameraTest[68601:70b] Unlimited access to network resources
+2014-07-07 17:04:18.460 CameraTest[68601:70b] CDVPlugin class CDVStatusBar (pluginName: statusbar) does not exist.
+2014-07-07 17:04:18.460 CameraTest[68601:70b] [CDVTimer][statusbar] 0.487983ms
+2014-07-07 17:04:18.461 CameraTest[68601:70b] [CDVTimer][TotalPluginStartup] 0.935018ms
+2014-07-07 17:04:18.524 CameraTest[68601:70b] Resetting plugins due to page load.
+2014-07-07 17:04:18.658 CameraTest[68601:70b] Finished load of: file:///Users/nelly/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/F75A4CC6-1034-4C0B-994C-55A6B222E204/CameraTest.app/www/index.html
+2014-07-07 17:05:48.963 CameraTest[68967:70b] Multi-tasking -> Device: YES, App: YES
+2014-07-07 17:05:48.969 CameraTest[68967:70b] Unlimited access to network resources
+2014-07-07 17:05:48.985 CameraTest[68967:70b] CDVPlugin class CDVStatusBar (pluginName: statusbar) does not exist.
+2014-07-07 17:05:48.985 CameraTest[68967:70b] [CDVTimer][statusbar] 0.468969ms
+2014-07-07 17:05:48.985 CameraTest[68967:70b] [CDVTimer][TotalPluginStartup] 0.806987ms
+2014-07-07 17:05:49.082 CameraTest[68967:70b] Resetting plugins due to page load.
+2014-07-07 17:05:49.224 CameraTest[68967:70b] Finished load of: file:///Users/nelly/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/F75A4CC6-1034-4C0B-994C-55A6B222E204/CameraTest.app/www/index.html
+2014-07-07 17:06:01.323 CameraTest[69208:70b] Multi-tasking -> Device: YES, App: YES
+2014-07-07 17:06:01.330 CameraTest[69208:70b] Unlimited access to network resources
+2014-07-07 17:06:01.344 CameraTest[69208:70b] CDVPlugin class CDVStatusBar (pluginName: statusbar) does not exist.
+2014-07-07 17:06:01.345 CameraTest[69208:70b] [CDVTimer][statusbar] 0.500023ms
+2014-07-07 17:06:01.345 CameraTest[69208:70b] [CDVTimer][TotalPluginStartup] 0.832975ms
+2014-07-07 17:06:01.393 CameraTest[69208:70b] Resetting plugins due to page load.
+2014-07-07 17:06:01.526 CameraTest[69208:70b] Finished load of: file:///Users/nelly/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/F75A4CC6-1034-4C0B-994C-55A6B222E204/CameraTest.app/www/index.html

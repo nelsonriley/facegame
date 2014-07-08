@@ -5,7 +5,7 @@
 // the 2nd parameter is an array of 'requires'
 // 'starter.services' is found in services.js
 // 'starter.controllers' is found in controllers.js
-angular.module('starter', ['ionic', 'starter.services'])
+angular.module('starter', ['ionic', 'starter.services', 'firebase'])
 
 .config(function($compileProvider){
   $compileProvider.imgSrcSanitizationWhitelist(/^\s*(https?|ftp|mailto|file|tel):/);
@@ -20,7 +20,12 @@ angular.module('starter', ['ionic', 'starter.services'])
   });
 })
 
-.controller('MainCtrl', function($scope, Camera) {
+.controller('MainCtrl', function($scope, $firebase, Camera) {
+
+  // var ref = new Firebase("https://facegame.firebaseio.com/");
+  var ref = new Firebase("https://gdwjjyuzekg.firebaseio-demo.com/");
+  $scope.messages = $firebase(ref);
+  // $scope.messages = [{from: "george", body: "work please"}];
 
   // photo model: uri, createdAt
   $scope.photos = [];
