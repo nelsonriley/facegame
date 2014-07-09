@@ -14,19 +14,31 @@ angular.module('controllers', ['ionic', 'services', 'firebase'])
       console.log("Fresh Image: ", imageURI);
       var now = new Date();
       var timestamp = now.toISOString();
-      $scope.pairs.push({photo1: imageURI, createdAt: timestamp});
+      $scope.pairs.unshift({photo1: imageURI, createdAt: timestamp});
     }, function(err) {
       console.err("Camera Error: ", err);
     });
   };
 
   // tap a photo to play or pass
-  $scope.playOrPass = function(id) {
+  $scope.playOrPass = function(index) {
+    console.log("INDEX ", index);
+    // *index does not necessarily match sortBy order
+    $rootScope.rootPhoto = $scope.pairs[index].photo1;
     // use ionicViewService to show the back button on next view
     $ionicViewService.nextViewOptions({
       disableBack: false
     });
     $location.path('/playorpass');
+  };
+
+  // pass it
+  $scope.passIt = function() {
+    // use ionicViewService to show the back button on next view
+    $ionicViewService.nextViewOptions({
+      disableBack: false
+    });
+    $location.path('/passit')
   };
 
   // test new features easily
@@ -36,18 +48,22 @@ angular.module('controllers', ['ionic', 'services', 'firebase'])
     $scope.pairs.push({photo1: 'none', createdAt: timestamp});
   };
 
+
 })
 
 
-.controller('PlayPassController', function($scope, $rootScope, $ionicNavBarDelegate) {
+.controller('PlayPassController', function($scope, $rootScope, $ionicViewService, $location, $ionicNavBarDelegate) {
  
-  // play (makeIt) specific to this scope
+  // grab the URI from the tapped photo
+  $scope.rootPhoto = $rootScope.rootPhoto;
+
+  // play it (makeIt) specific to this scope
   $scope.playIt = function() {
     Camera.getPicture().then(function(imageURI) {
       console.log("Fresh Image: ", imageURI);
       var now = new Date();
       var timestamp = now.toISOString();
-      $scope.pairs.push({photo1: imageURI, createdAt: timestamp});
+      // $scope.pairs.push({photo1: imageURI, createdAt: timestamp});
     }, function(err) {
       console.err("Camera Error: ", err);
     });
@@ -56,6 +72,11 @@ angular.module('controllers', ['ionic', 'services', 'firebase'])
   // pass it
   $scope.passIt = function() {
     console.log("Passing");
+    // use ionicViewService to show the back button on next view
+    $ionicViewService.nextViewOptions({
+      disableBack: false
+    });
+    $location.path('/passit')
   };
 
   // cancel

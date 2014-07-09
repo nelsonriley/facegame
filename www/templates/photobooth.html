@@ -5,11 +5,11 @@
 
   <ion-content class="has-header" padding="true">
 		<button ng-click="makeIt()" class="button button-block button-primary">Make a Face (make it)</button>
-    <button ng-click="testIt()" class="button button-block button-primary">Test it</button>
+    <!-- <button ng-click="testIt()" class="button button-block button-primary">Test it</button> -->
 
     <div class="row" ng-repeat="pair in pairs | orderBy: '-createdAt' ">
       <div class="col">
-        <img ng-click="playOrPass()" ng-src="{{pair.photo1}}" style="width: 100%">
+        <img ng-click="playOrPass($index)" ng-src="{{pair.photo1}}" style="width: 100%">
         <br>
         <!-- <p class="calm">nelly</p> -->
         <!-- <button class="button button-clear button-calm"> nelly </button> -->
@@ -24,7 +24,7 @@
       <div class="col col-center">
         <!-- <img ng-src="{{pair.photo2}}" style="width: 100%"> -->
         <!-- <br> -->
-        <button class="button button-clear button-positive icon-right ion-chevron-right">Pass it </button>
+        <button ng-click="passIt()" class="button button-clear button-positive icon-right ion-chevron-right">Pass it </button>
       </div>
     </div>
 

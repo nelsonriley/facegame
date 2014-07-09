@@ -17,6 +17,14 @@ angular.module('app', ['ionic', 'services', 'firebase', 'controllers'])
       templateUrl: "templates/playorpass.html",
       controller: 'PlayPassController'
     });
+
+  $stateProvider
+
+    .state('passit', {
+      url: "/passit",
+      templateUrl: "templates/passit.html",
+      controller: 'PlayPassController'
+    });
   
   $stateProvider
 
