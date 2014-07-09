@@ -43,6 +43,16 @@ angular.module('app', ['ionic', 'services', 'firebase', 'controllers'])
       controller: 'AppController'
     })
 
+    .state('app.popular', {
+      url: "/popular",
+      views: {
+        'menuContent' :{
+          templateUrl: "templates/popular.html",
+          controller: 'AppController'
+        }
+      }
+    })
+
     .state('app.photobooth', {
       url: "/photobooth",
       views: {
