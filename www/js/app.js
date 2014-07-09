@@ -9,6 +9,14 @@ angular.module('app', ['ionic', 'services', 'firebase', 'controllers'])
 
 .config(function($compileProvider, $stateProvider, $urlRouterProvider) {
   $compileProvider.imgSrcSanitizationWhitelist(/^\s*(https?|ftp|mailto|file|tel):/);
+
+  $stateProvider
+
+    .state('playorpass', {
+      url: "/playorpass",
+      templateUrl: "templates/playorpass.html",
+      controller: 'PlayPassController'
+    });
   
   $stateProvider
 
